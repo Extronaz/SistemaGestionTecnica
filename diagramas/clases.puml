@@ -1,0 +1,29 @@
+@startuml
+
+class Cliente
+class Tecnico
+class OrdenTecnica
+class Reporte
+
+class SistemaFacade
+
+interface Observador
+
+class UsuarioNotificado
+
+interface EstrategiaBusqueda
+
+class BusquedaPorCliente
+class BusquedaPorCodigo
+
+Observador <|.. UsuarioNotificado
+
+EstrategiaBusqueda <|.. BusquedaPorCliente
+EstrategiaBusqueda <|.. BusquedaPorCodigo
+
+SistemaFacade --> Cliente
+SistemaFacade --> Tecnico
+SistemaFacade --> OrdenTecnica
+SistemaFacade --> Reporte
+
+@enduml
