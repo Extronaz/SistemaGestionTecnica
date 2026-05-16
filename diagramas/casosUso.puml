@@ -1,0 +1,26 @@
+@startuml
+
+left to right direction
+
+actor Cliente
+actor Tecnico
+actor Administrador
+
+rectangle SistemaGestionTecnica {
+
+usecase "Iniciar Sesion"
+usecase "Registrar Cliente"
+usecase "Registrar Orden Tecnica"
+usecase "Asignar Tecnico"
+usecase "Generar Reporte"
+
+}
+
+Cliente --> "Registrar Orden Tecnica"
+
+Tecnico --> "Generar Reporte"
+
+Administrador --> "Registrar Cliente"
+Administrador --> "Asignar Tecnico"
+
+@enduml
