@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Help Desk - Seguimiento de Solicitudes</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <center>
+
+            <h1>Centro de Atención y Soporte Tecnológico</h1>
+
+            <p>
+                Consulta y monitoreo de solicitudes registradas.
+            </p>
+
+        </center>
+
+    </header>
+
+    <nav>
+
+        <ul>
+            <li><a href="Index.html">Panel Principal</a></li>
+            <li><a href="Reportes.html">Registrar Reporte</a></li>
+            <li><a href="Tickets.html">Tickets</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2><center>Historial de Solicitudes</center></h2>
+
+            <article>
+
+                <h3>Información General</h3>
+
+                <p>
+                    En esta sección se presentan las solicitudes registradas
+                    dentro del sistema, permitiendo consultar el avance y la
+                    atención brindada por el personal de soporte técnico.
+                </p>
+
+            </article>
+
+        </section>
+
+        <section>
+
+            <h2><center>Registro de Casos Atendidos</center></h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>N.° Solicitud</th>
+                        <th>Fecha de Ingreso</th>
+                        <th>Descripción Breve</th>
+                        <th>Dependencia de Soporte</th>
+                        <th>Urgencia</th>
+                        <th>Progreso del Caso</th>
+                        <th>Especialista Asignado</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>SOL-001</td>
+                        <td>05/06/2026</td>
+                        <td>Interrupción del acceso a internet</td>
+                        <td>Conectividad Institucional</td>
+                        <td>Alta</td>
+                        <td>Pendiente de revisión</td>
+                        <td>Ing. Andrea Zambrano</td>
+                    </tr>
+
+                    <tr>
+                        <td>SOL-002</td>
+                        <td>06/06/2026</td>
+                        <td>Computador no inicia correctamente</td>
+                        <td>Soporte de Equipos</td>
+                        <td>Media</td>
+                        <td>Diagnóstico en curso</td>
+                        <td>Ing. David Cedeño</td>
+                    </tr>
+
+                    <tr>
+                        <td>SOL-003</td>
+                        <td>07/06/2026</td>
+                        <td>Error de autenticación en plataforma</td>
+                        <td>Aplicaciones Institucionales</td>
+                        <td>Baja</td>
+                        <td>Caso finalizado</td>
+                        <td>Ing. Karla Moreira</td>
+                    </tr>
+
+                    <tr>
+                        <td>SOL-004</td>
+                        <td>08/06/2026</td>
+                        <td>Falla en impresora departamental</td>
+                        <td>Soporte de Equipos</td>
+                        <td>Media</td>
+                        <td>Asignado al técnico</td>
+                        <td>Ing. José Mendoza</td>
+                    </tr>
+
+                    <tr>
+                        <td>SOL-005</td>
+                        <td>09/06/2026</td>
+                        <td>Lentitud en los servicios de red</td>
+                        <td>Conectividad Institucional</td>
+                        <td>Alta</td>
+                        <td>En proceso de solución</td>
+                        <td>Ing. Patricia Vélez</td>
+                    </tr>
+
+                    <tr>
+                        <td>SOL-006</td>
+                        <td>10/06/2026</td>
+                        <td>Actualización pendiente del software</td>
+                        <td>Aplicaciones Institucionales</td>
+                        <td>Baja</td>
+                        <td>Programado para atención</td>
+                        <td>Ing. Luis Andrade</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section>
+
+            <h2><center>Guía de Seguimiento</center></h2>
+
+            <article>
+
+                <h3>Interpretación del Progreso de los Casos</h3>
+
+                <ul>
+
+                    <li>
+                        <strong>Pendiente de revisión:</strong>
+                        la solicitud ha sido registrada y está a la espera
+                        de una evaluación inicial.
+                    </li>
+
+                    <li>
+                        <strong>Diagnóstico en curso:</strong>
+                        el personal técnico se encuentra identificando
+                        las causas del inconveniente reportado.
+                    </li>
+
+                    <li>
+                        <strong>Asignado al técnico:</strong>
+                        el caso fue derivado a un especialista para su atención.
+                    </li>
+
+                    <li>
+                        <strong>En proceso de solución:</strong>
+                        se están ejecutando las acciones necesarias
+                        para resolver el incidente.
+                    </li>
+
+                    <li>
+                        <strong>Programado para atención:</strong>
+                        la solicitud será gestionada en una fecha previamente establecida.
+                    </li>
+
+                    <li>
+                        <strong>Caso finalizado:</strong>
+                        el incidente ha sido resuelto y cerrado satisfactoriamente.
+                    </li>
+
+                </ul>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <center>
+
+            <p>
+                © 2026 Universidad Técnica de Manabí
+            </p>
+
+        </center>
+
+    </footer>
+
+</body>
+
+</html>

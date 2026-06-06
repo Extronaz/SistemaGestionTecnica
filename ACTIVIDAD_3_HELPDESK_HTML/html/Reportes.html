@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Help Desk - Registro de Reportes</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <center>
+
+            <h1>Centro de Atención y Soporte Tecnológico</h1>
+
+            <p>
+                Registro y control de solicitudes de asistencia informática.
+            </p>
+
+        </center>
+
+    </header>
+
+    <nav>
+
+        <ul>
+            <li><a href="Index.html">Panel Principal</a></li>
+            <li><a href="Reportes.html">Registrar Reporte</a></li>
+            <li><a href="Tickets.html">Tickets</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2><center>Ingreso de Solicitudes</center></h2>
+
+            <article>
+
+                <h3>Orientación para el Usuario</h3>
+
+                <p>
+                    Complete el siguiente formulario proporcionando
+                    información precisa sobre la situación presentada,
+                    con el fin de facilitar su análisis y posterior atención.
+                </p>
+
+            </article>
+
+        </section>
+
+        <section>
+
+            <h2><center>Datos del Reporte</center></h2>
+
+            <form action="#" method="post">
+
+                <p>
+
+                    <label for="solicitante">
+                        Nombre del Solicitante:
+                    </label>
+
+                    <br><br>
+
+                    <input
+                        type="text"
+                        id="solicitante"
+                        name="solicitante"
+                        size="50"
+                        required>
+
+                </p>
+
+                <p>
+
+                    <label for="fecha">
+                        Fecha de Registro:
+                    </label>
+
+                    <br><br>
+
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required>
+
+                </p>
+
+                <p>
+
+                    <label for="asunto">
+                        Asunto del Reporte:
+                    </label>
+
+                    <br><br>
+
+                    <input
+                        type="text"
+                        id="asunto"
+                        name="asunto"
+                        size="50"
+                        required>
+
+                </p>
+
+                <p>
+
+                    <label for="categoria">
+                        Área de Atención:
+                    </label>
+
+                    <br><br>
+
+                    <select
+                        id="categoria"
+                        name="categoria"
+                        required>
+
+                        <option value="">
+                            Seleccione una opción
+                        </option>
+
+                        <option value="equipos">
+                            Equipos Informáticos
+                        </option>
+
+                        <option value="conectividad">
+                            Servicios de Conectividad
+                        </option>
+
+                        <option value="aplicaciones">
+                            Aplicaciones Institucionales
+                        </option>
+
+                    </select>
+
+                </p>
+
+                <p>
+
+                    <label>
+                        Nivel de Atención:
+                    </label>
+
+                    <br><br>
+
+                    <input
+                        type="radio"
+                        id="critica"
+                        name="prioridad"
+                        value="Crítica"
+                        required>
+
+                    <label for="critica">
+                        Crítica
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="moderada"
+                        name="prioridad"
+                        value="Moderada">
+
+                    <label for="moderada">
+                        Moderada
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="programada"
+                        name="prioridad"
+                        value="Programada">
+
+                    <label for="programada">
+                        Programada
+                    </label>
+
+                </p>
+
+                <p>
+
+                    <label for="detalle">
+                        Descripción del Reporte:
+                    </label>
+
+                    <br><br>
+
+                    <textarea
+                        id="detalle"
+                        name="detalle"
+                        rows="8"
+                        cols="60"
+                        required></textarea>
+
+                </p>
+
+                <p>
+
+                    <button type="submit">
+                        Enviar Reporte
+                    </button>
+
+                    <button type="reset">
+                        Restablecer Datos
+                    </button>
+
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <center>
+
+            <p>
+                © 2026 Universidad Técnica de Manabí
+            </p>
+
+        </center>
+
+    </footer>
+
+</body>
+
+</html>
