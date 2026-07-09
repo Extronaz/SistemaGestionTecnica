@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Help Desk - Registro de Reportes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!--
+                    HEADER
+    =-->
+
+    <header>
+
+        <div class="container fade-up">
+
+            <h1>
+
+                Centro de Atención y Soporte Tecnológico
+
+            </h1>
+
+            <p>
+
+                Registro y control de solicitudes de asistencia informática.
+
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!--
+                    MENÚ
+    =-->
+
+    <nav>
+
+        <ul>
+
+            <li>
+
+                <a href="Index.html">
+
+                    🏠 Panel Principal
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="Reportes.html">
+
+                    📝 Registrar Reporte
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="Tickets.html">
+
+                    🎫 Tickets
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!--
+                    CONTENIDO
+    =-->
+
+    <main class="container">
+
+
+        <!--
+                INFORMACIÓN
+        =-->
+
+        <section>
+
+            <h2>
+
+                Ingreso de Solicitudes
+
+            </h2>
+
+            <div class="card">
+
+                <h3>
+
+                    Orientación para el Usuario
+
+                </h3>
+
+                <p>
+
+                    Complete el siguiente formulario proporcionando
+                    información precisa sobre la situación presentada,
+                    con el fin de facilitar su análisis y posterior atención.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <hr class="divider">
+
+
+        <!--
+                FORMULARIO
+        =-->
+
+        <section>
+
+            <h2>
+
+                Datos del Reporte
+
+            </h2>
+
+            <form action="#"
+                  method="post">
+
+
+                <div class="form-row">
+
+                    <div class="form-col">
+
+                        <label for="solicitante">
+
+                            Nombre del Solicitante
+
+                        </label>
+
+                        <input
+
+                            type="text"
+
+                            id="solicitante"
+
+                            name="solicitante"
+
+                            placeholder="Ingrese el nombre completo"
+
+                            required>
+
+                    </div>
+
+
+                    <div class="form-col">
+
+                        <label for="fecha">
+
+                            Fecha de Registro
+
+                        </label>
+
+                        <input
+
+                            type="date"
+
+                            id="fecha"
+
+                            name="fecha"
+
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-col">
+
+                        <label for="asunto">
+
+                            Asunto del Reporte
+
+                        </label>
+
+                        <input
+
+                            type="text"
+
+                            id="asunto"
+
+                            name="asunto"
+
+                            placeholder="Ingrese el asunto"
+
+                            required>
+
+                    </div>
+
+
+                    <div class="form-col">
+
+                        <label for="categoria">
+
+                            Área de Atención
+
+                        </label>
+
+                        <select
+
+                            id="categoria"
+
+                            name="categoria"
+
+                            required>
+
+                            <option value="">
+
+                                Seleccione una opción
+
+                            </option>
+
+                            <option value="equipos">
+
+                                Equipos Informáticos
+
+                            </option>
+
+                            <option value="conectividad">
+
+                                Servicios de Conectividad
+
+                            </option>
+
+                            <option value="aplicaciones">
+
+                                Aplicaciones Institucionales
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+                <label>
+
+                    Nivel de Atención
+
+                </label>
+
+                <div class="card">
+
+                    <input
+
+                        type="radio"
+
+                        id="critica"
+
+                        name="prioridad"
+
+                        value="Crítica"
+
+                        required>
+
+                    <label for="critica">
+
+                        Crítica
+
+                    </label>
+
+                    <br><br>
+
+                    <input
+
+                        type="radio"
+
+                        id="moderada"
+
+                        name="prioridad"
+
+                        value="Moderada">
+
+                    <label for="moderada">
+
+                        Moderada
+
+                    </label>
+
+                    <br><br>
+
+                    <input
+
+                        type="radio"
+
+                        id="programada"
+
+                        name="prioridad"
+
+                        value="Programada">
+
+                    <label for="programada">
+
+                        Programada
+
+                    </label>
+
+                </div>
+
+
+                <label for="detalle">
+
+                    Descripción del Reporte
+
+                </label>
+
+                <textarea
+
+                    id="detalle"
+
+                    name="detalle"
+
+                    rows="8"
+
+                    placeholder="Describa detalladamente el incidente presentado..."
+
+                    required>
+
+                </textarea>
+
+
+                <div class="alert alert-info">
+
+                    ℹ Verifique que la información ingresada sea correcta antes
+                    de enviar el reporte. Esto permitirá agilizar el proceso de
+                    atención por parte del personal de soporte técnico.
+
+                </div>
+
+
+                <div class="button-group">
+
+                    <button
+
+                        type="submit"
+
+                        class="btn btn-primary">
+
+                        Enviar Reporte
+
+                    </button>
+
+
+                    <button
+
+                        type="reset"
+
+                        class="btn btn-warning">
+
+                        Restablecer Datos
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!--
+                    FOOTER
+    =-->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+
+                © 2026 Universidad Técnica de Manabí
+
+            </p>
+
+            <p>
+
+                Sistema de Gestión Help Desk
+
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
